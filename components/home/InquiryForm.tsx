@@ -60,7 +60,7 @@ export default function InquiryForm() {
     }
 
     formData.append("access_key", accessKey);
-    formData.append("subject", "New Inquiry — 2 or More Website");
+    formData.append("subject", "New Inquiry — 2 OR MORE Website");
 
     try {
       const res = await fetch("https://api.web3forms.com/submit", {

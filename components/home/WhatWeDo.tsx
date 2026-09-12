@@ -2,6 +2,7 @@ import { ClipboardCheck, CalendarHeart, PartyPopper } from "lucide-react";
 import Container from "@/components/shared/Container";
 import SectionHeading from "@/components/shared/SectionHeading";
 import { WHAT_WE_DO_CARDS } from "@/lib/constants";
+import { withBrandName } from "@/components/shared/BrandName";
 
 const ICONS = [ClipboardCheck, CalendarHeart, PartyPopper];
 
@@ -12,7 +13,9 @@ export default function WhatWeDo() {
         <SectionHeading
           eyebrow="What We Do"
           title="You bring the vision. We handle the details."
-          description="2 or More helps hosts, couples, families, and organizations turn their event plans into an experience that actually runs smoothly. From final logistics to full-service planning, we step in wherever you need us."
+          description={withBrandName(
+            "2 or More helps hosts, couples, families, and organizations turn their event plans into an experience that actually runs smoothly. From final logistics to full-service planning, we step in wherever you need us."
+          )}
         />
 
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">

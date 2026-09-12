@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative flex min-h-[85vh] items-center overflow-hidden bg-ink">
       <Image
         src="/images/photos/ceremony-arch.jpg"
-        alt="Floral ceremony arch and gold chiavari chairs at a 2 or More coordinated wedding"
+        alt="Floral ceremony arch and gold chiavari chairs at a 2 OR MORE coordinated wedding"
         fill
         priority
         sizes="100vw"

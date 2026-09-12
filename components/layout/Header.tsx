@@ -25,7 +25,7 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-3 sm:px-8 lg:px-12">
-        <Link href="/" aria-label="2 or More home" className="block h-16 shrink-0">
+        <Link href="/" aria-label="2 OR MORE home" className="block h-16 shrink-0">
           <LogoFull fit="height" />
         </Link>
 

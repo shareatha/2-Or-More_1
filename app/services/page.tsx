@@ -12,9 +12,9 @@ import {
 } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Services & Pricing | 2 or More",
+  title: "Services & Pricing | 2 OR MORE",
   description:
-    "Compare wedding coordination and planning packages, social event coordination, and corporate event services from 2 or More.",
+    "Compare wedding coordination and planning packages, social event coordination, and corporate event services from 2 OR MORE.",
 };
 
 const WEDDING_TIER_DETAILS = [

@@ -3,6 +3,7 @@ import { Mail, Phone } from "lucide-react";
 import { NAV_LINKS, SERVICE_AREAS, SITE } from "@/lib/constants";
 import Container from "@/components/shared/Container";
 import { LogoFull } from "@/components/shared/Logo";
+import { BrandName } from "@/components/shared/BrandName";
 import { InstagramIcon, FacebookIcon } from "@/components/shared/SocialIcons";
 
 export default function Footer() {
@@ -84,7 +85,7 @@ export default function Footer() {
       <div className="border-t border-white/10 py-6">
         <Container>
           <p className="font-body text-xs text-offwhite/50">
-            &copy; {new Date().getFullYear()} 2 or More Events. All rights reserved.
+            &copy; {new Date().getFullYear()} <BrandName /> Events. All rights reserved.
           </p>
         </Container>
       </div>

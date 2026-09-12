@@ -5,9 +5,9 @@ import { Button } from "@/components/shared/Button";
 import PortfolioGrid from "@/components/portfolio/PortfolioGrid";
 
 export const metadata: Metadata = {
-  title: "Portfolio | 2 or More",
+  title: "Portfolio | 2 OR MORE",
   description:
-    "Weddings, celebrations, showers, and corporate events coordinated by 2 or More across Delaware, Maryland & Pennsylvania.",
+    "Weddings, celebrations, showers, and corporate events coordinated by 2 OR MORE across Delaware, Maryland & Pennsylvania.",
 };
 
 export default function PortfolioPage() {

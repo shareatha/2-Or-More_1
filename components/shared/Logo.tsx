@@ -18,7 +18,7 @@ export function LogoMark({
   return (
     <Image
       src={dark ? "/images/logo/mark-dark.png" : "/images/logo/mark-light.png"}
-      alt="2 or More"
+      alt="2 OR MORE"
       width={700}
       height={dark ? 715 : 740}
       sizes="80px"
@@ -41,7 +41,7 @@ export function LogoFull({
   return (
     <Image
       src={dark ? "/images/logo/full-dark.png" : "/images/logo/full-light.png"}
-      alt="2 or More — Event Coordination + Planning"
+      alt="2 OR MORE — Event Coordination + Planning"
       width={1254}
       height={dark ? 1254 : 1180}
       sizes={fit === "height" ? "100px" : "300px"}

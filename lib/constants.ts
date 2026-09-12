@@ -2,7 +2,7 @@
 // (pricing, service areas, portfolio, testimonials). Update here first.
 
 export const SITE = {
-  name: "2 or More",
+  name: "2 OR MORE",
   tagline: "More than a plan. A perfectly executed experience.",
   email: "business@2ormoreevents.com",
   phone: "(302) 555-0142",

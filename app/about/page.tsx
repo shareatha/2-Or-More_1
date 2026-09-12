@@ -3,11 +3,12 @@ import Image from "next/image";
 import Container from "@/components/shared/Container";
 import SectionHeading from "@/components/shared/SectionHeading";
 import { Button } from "@/components/shared/Button";
+import { BrandName, withBrandName } from "@/components/shared/BrandName";
 
 export const metadata: Metadata = {
-  title: "About | 2 or More",
+  title: "About | 2 OR MORE",
   description:
-    "Meet the team behind 2 or More and learn the philosophy driving our event coordination and planning services.",
+    "Meet the team behind 2 OR MORE and learn the philosophy driving our event coordination and planning services.",
 };
 
 const VALUES = [
@@ -38,7 +39,7 @@ export default function AboutPage() {
               Our Story
             </span>
             <h1 className="font-display text-4xl font-bold leading-tight text-ink text-balance sm:text-5xl">
-              We started 2 or More to make hosting feel good again.
+              We started <BrandName /> to make hosting feel good again.
             </h1>
             <p className="font-body text-base leading-relaxed text-charcoal sm:text-lg">
               After years spent behind the scenes at other people&apos;s
@@ -47,11 +48,11 @@ export default function AboutPage() {
               it became clear that every host needs something a little
               different. Some want a partner from the very first decision.
               Others just need someone to step in, take the reins, and
-              execute the plan they&apos;ve already built. 2 or More was
+              execute the plan they&apos;ve already built. <BrandName /> was
               made to meet hosts wherever they are in that process.
             </p>
             <p className="font-body text-base leading-relaxed text-charcoal sm:text-lg">
-              That&apos;s 2 or More: an event coordination and planning
+              That&apos;s <BrandName />: an event coordination and planning
               company built for hosts who want it done right, without losing
               themselves in the process.
             </p>
@@ -59,7 +60,7 @@ export default function AboutPage() {
           <div className="relative h-96 w-full overflow-hidden rounded-lg">
             <Image
               src="/images/photos/founder-portrait.jpg"
-              alt="2 or More founder setting a place card at a reception table"
+              alt="2 OR MORE founder setting a place card at a reception table"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-cover object-top"
@@ -73,7 +74,9 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="Our Mission"
             title="Beautiful events shouldn't come at the cost of your sanity."
-            description="At 2 or More, we believe the best events aren't just beautiful — they're well thought out, well executed, and actually enjoyable for the people hosting them."
+            description={withBrandName(
+              "At 2 or More, we believe the best events aren't just beautiful — they're well thought out, well executed, and actually enjoyable for the people hosting them."
+            )}
           />
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
@@ -101,7 +104,7 @@ export default function AboutPage() {
             <div className="relative col-span-2 h-64 overflow-hidden rounded-lg">
               <Image
                 src="/images/photos/founder-bw.jpg"
-                alt="2 or More founder reviewing an event binder"
+                alt="2 OR MORE founder reviewing an event binder"
                 fill
                 sizes="50vw"
                 className="object-cover"
@@ -110,7 +113,7 @@ export default function AboutPage() {
             <div className="relative h-64 overflow-hidden rounded-lg">
               <Image
                 src="/images/photos/notebook-menu.jpg"
-                alt="2 or More branded planning notebook and menu card"
+                alt="2 OR MORE branded planning notebook and menu card"
                 fill
                 sizes="25vw"
                 className="object-cover"
@@ -119,7 +122,7 @@ export default function AboutPage() {
             <div className="relative h-64 overflow-hidden rounded-lg">
               <Image
                 src="/images/photos/tablescape-gold.jpg"
-                alt="Reception table detail styled by 2 or More"
+                alt="Reception table detail styled by 2 OR MORE"
                 fill
                 sizes="25vw"
                 className="object-cover"

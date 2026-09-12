@@ -3,6 +3,7 @@ import { Check } from "lucide-react";
 import Container from "@/components/shared/Container";
 import { Button } from "@/components/shared/Button";
 import { SIGNATURE_OFFER } from "@/lib/constants";
+import { withBrandName } from "@/components/shared/BrandName";
 
 export default function SignatureOffer() {
   return (
@@ -12,7 +13,7 @@ export default function SignatureOffer() {
           <div className="relative h-72 w-full lg:h-full">
             <Image
               src="/images/photos/tablescape-black-gold.jpg"
-              alt="Final reception details set by 2 or More before guest arrival"
+              alt="Final reception details set by 2 OR MORE before guest arrival"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-cover"
@@ -24,10 +25,10 @@ export default function SignatureOffer() {
               Signature Offer &middot; {SIGNATURE_OFFER.price}
             </span>
             <h2 className="font-display text-3xl font-bold leading-tight text-white text-balance sm:text-4xl">
-              {SIGNATURE_OFFER.headline}
+              {withBrandName(SIGNATURE_OFFER.headline)}
             </h2>
             <p className="font-body text-sm leading-relaxed text-offwhite/80 sm:text-base">
-              {SIGNATURE_OFFER.description}
+              {withBrandName(SIGNATURE_OFFER.description)}
             </p>
             <ul className="grid grid-cols-1 gap-x-6 gap-y-3 sm:grid-cols-2">
               {SIGNATURE_OFFER.handoffItems.map((item) => (

@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import Container from "@/components/shared/Container";
 import SectionHeading from "@/components/shared/SectionHeading";
 import { TESTIMONIALS } from "@/lib/constants";
+import { withBrandName } from "@/components/shared/BrandName";
 
 export default function Testimonials() {
   const [index, setIndex] = useState(0);
@@ -26,7 +27,7 @@ export default function Testimonials() {
             ))}
           </div>
           <p className="font-display text-2xl font-medium leading-snug text-white text-balance sm:text-3xl">
-            &ldquo;{testimonial.quote}&rdquo;
+            &ldquo;{withBrandName(testimonial.quote)}&rdquo;
           </p>
           <div className="flex flex-col gap-0.5">
             <span className="font-body text-sm font-bold uppercase tracking-wide text-gold">
