@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Check } from "lucide-react";
+import { Check, CalendarClock, CreditCard } from "lucide-react";
 import Container from "@/components/shared/Container";
 import SectionHeading from "@/components/shared/SectionHeading";
 import { Button } from "@/components/shared/Button";
@@ -218,6 +218,79 @@ export default function ServicesPage() {
           <Button href="/#power-hour" variant="secondary">
             Learn More on the Homepage
           </Button>
+        </Container>
+      </section>
+
+      <section id="book-consultation" className="bg-offwhite py-20">
+        <Container className="flex flex-col gap-12">
+          <SectionHeading
+            eyebrow="Book a Consultation"
+            title="See the Full Client Experience"
+            description="A live preview of the booking flow — pick a time for a free discovery call, then see how reserving and paying for a package would work."
+          />
+
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+            <div className="flex flex-col gap-4 rounded-lg border border-beige bg-white p-6">
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold/15 text-gold-dark">
+                  <CalendarClock className="h-5 w-5" strokeWidth={1.75} />
+                </div>
+                <h3 className="font-display text-xl font-bold text-ink">
+                  Step 1 &middot; Pick a Time
+                </h3>
+              </div>
+              <p className="font-body text-sm text-charcoal">
+                Choose a time below for a free discovery call.
+              </p>
+              <div className="overflow-hidden rounded-md border border-beige">
+                <iframe
+                  src="https://calendly.com/reigninlifeministries-proton/discovery-call"
+                  width="100%"
+                  height="650"
+                  frameBorder={0}
+                  title="Schedule a discovery call"
+                  className="block"
+                />
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-4 rounded-lg border border-beige bg-white p-6">
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold/15 text-gold-dark">
+                  <CreditCard className="h-5 w-5" strokeWidth={1.75} />
+                </div>
+                <h3 className="font-display text-xl font-bold text-ink">
+                  Step 2 &middot; Reserve Your Spot
+                </h3>
+              </div>
+              <p className="font-body text-sm text-charcoal">
+                Ready to lock in a package? Here&apos;s a preview of the
+                checkout for the {POWER_HOUR.name}.
+              </p>
+
+              <div className="flex flex-col gap-1 rounded-md border border-beige bg-offwhite p-5">
+                <span className="font-display text-lg font-bold text-ink">
+                  {POWER_HOUR.name}
+                </span>
+                <span className="font-body text-sm font-bold text-gold-dark">
+                  {POWER_HOUR.price}
+                </span>
+              </div>
+
+              <a
+                href="https://buy.stripe.com/test_6oU7sK54vdorczJaRL5gc00"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-md border border-gold bg-gold px-7 py-3.5 font-body text-sm font-bold uppercase tracking-wide text-ink transition-all duration-300 hover:-translate-y-0.5 hover:border-gold-dark hover:bg-gold-dark hover:shadow-lg"
+              >
+                Pay &amp; Book Now
+              </a>
+              <p className="font-body text-xs text-charcoal/60">
+                Demo checkout &middot; Stripe test mode &middot; no charge
+                will be made.
+              </p>
+            </div>
+          </div>
         </Container>
       </section>
 
